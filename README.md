@@ -49,7 +49,7 @@
 ```
     $ python blockchain.py 
 ```
-7. Head to the Web brouser and visit
+7. Head to the Web browser and visit
 ```
     http://127.0.0.1:5000/
 ```
