@@ -71,9 +71,9 @@ Blockchains are typically managed by a peer-to-peer network for use as a publicl
 
 ## Why Blockchain?
 
-* **Immutable**: Blockchains are resistant to modification of their data because once recorded, the data in any given block cannot be altered retroactively without altering all subsequent blocks.
+* **Immutable :** Blockchains are resistant to modification of their data because once recorded, the data in any given block cannot be altered retroactively without altering all subsequent blocks.
 
-* **Decentralized**: It doesn’t have any governing authority or a single person looking after the framework. Rather a group of nodes maintains the network making it decentralized. It means :
+* **Decentralized :** It doesn’t have any governing authority or a single person looking after the framework. Rather a group of nodes maintains the network making it decentralized. It means :
         
         -> Transparency
         -> User Control
@@ -82,9 +82,9 @@ Blockchains are typically managed by a peer-to-peer network for use as a publicl
         -> No Third-Party
 
 
-* **Enhanced Security**: If someone wants to corrupt the network, he/she would have to alter every data stored on every node in the network. There could be millions and millions of people, where everyone has the same copy of the ledger.
+* **Enhanced Security :** If someone wants to corrupt the network, he/she would have to alter every data stored on every node in the network. There could be millions and millions of people, where everyone has the same copy of the ledger.
 
-* **Distributed Ledgers**: The ledger on the network is maintained by all other users on the system. This distributed computational power across the computers to ensure a better outcome. It ensures : 
+* **Distributed Ledgers :** The ledger on the network is maintained by all other users on the system. This distributed computational power across the computers to ensure a better outcome. It ensures : 
     
         -> No Malicious Changes
         -> Ownership of Verification
@@ -92,9 +92,9 @@ Blockchains are typically managed by a peer-to-peer network for use as a publicl
         -> Managership
         -> No Extra Favors
 
-* **Consensus**: The architecture is cleverly designed, and consensus algorithms are at the core of this architecture. The consensus is a decision-making process for the group of nodes active on the network. The consensus is responsible for the network being trustless. Nodes might not trust each other, but they can trust the algorithms that run at the core of it. That’s why every decision on the network is a winning scenario for the blockchain.
+* **Consensus :** The architecture is cleverly designed, and consensus algorithms are at the core of this architecture. The consensus is a decision-making process for the group of nodes active on the network. The consensus is responsible for the network being trustless. Nodes might not trust each other, but they can trust the algorithms that run at the core of it. That’s why every decision on the network is a winning scenario for the blockchain.
 
-* **True Traceability**: With blockchain, the supply chain becomes more transparent than ever, as compared to traditional supply chain, where it is hard to trace items that can lead to multiple problems, including theft, counterfeit, and loss of goods.
+* **True Traceability :** With blockchain, the supply chain becomes more transparent than ever, as compared to traditional supply chain, where it is hard to trace items that can lead to multiple problems, including theft, counterfeit, and loss of goods.
 
 ## Understanding the Program
 
@@ -125,7 +125,7 @@ The genesis block is the first block in any blockchain-based protocol. It is the
         self.createblock(proof = 1, prevhash = "0")
 ```
 
-Proof of Work(PoW) is the original consensus algorithm in a blockchain network. The algorithm is used to confirm the transaction and creates a new block to the chain. In this algorithm, minors (a group of people) compete against each other to complete the transaction on the network. The process of competing against each other is called mining. As soon as miners successfully created a valid block, he gets rewarded.
+Proof of Work (PoW) is the original consensus algorithm in a blockchain network. The algorithm is used to confirm the transaction and creates a new block to the chain. In this algorithm, minors (a group of people) compete against each other to complete the transaction on the network. The process of competing against each other is called mining. As soon as miners successfully created a valid block, he gets rewarded.
 
 ```python
     def proofofwork(self, prevproof):
@@ -144,11 +144,11 @@ Proof of Work(PoW) is the original consensus algorithm in a blockchain network. 
         return newproof
 ```
 
-Chain validation is an important part of the blockchain, it is used to validate weather tha blockchain is valid or not. There are two checks performed. 
+Chain validation is an important part of the blockchain, it is used to validate weather tha blockchain is valid or not. There are two checks performed:
 
-First check, for each block check if the previous hash field is equal to the hash of the previous block i.e. to verify the cryptographic link.
+* **First check :** For each block check if the previous hash field is equal to the hash of the previous block i.e. to verify the cryptographic link. 
 
-Second check, to check if the proof of work for each block is valid according to problem defined in proofofwork() function i.e. to check if the correct block is mined or not.
+* **Second check :** To check if the proof of work for each block is valid according to problem defined in proofofwork( ) function i.e. to check if the correct block is mined or not.
 
 ```python
     def ischainvalid(self, chain):
