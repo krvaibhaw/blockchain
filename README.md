@@ -152,8 +152,8 @@ Chain validation is an important part of the blockchain, it is used to validate 
 
 ```python
     def ischainvalid(self, chain):
-        prevblock = chain[0]   # Initilized to Genesis block
-        blockindex = 1         # Initilized to Next block
+        prevblock = chain[0]   # Initilized Genesis block (index 0)
+        blockindex = 1         # Initilized Next block (index 1)
 
         while blockindex < len(chain):
 
